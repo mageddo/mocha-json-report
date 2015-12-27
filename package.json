@@ -14,7 +14,7 @@
 	"name": "mocha-json-report",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/kurtsson/mocha-sonar-xml-cov-reporter.git"
+		"url": "https://github.com/mageddo/mocha-json-report"
 	},
 	"version": "0.0.1"
 }
