@@ -3,8 +3,7 @@ var fs = require('fs'),
 
 module.exports = function (runner) {
 
-	var stack = {};
-	var title;
+	var stack = {}, title, that = this;
 	runner.on('test end', function(test){
 		var file = test.file.substr(test.file.indexOf(process.cwd()) + process.cwd().length + 1);
 		stackF = stack[file];
@@ -29,13 +28,11 @@ module.exports = function (runner) {
 
 	runner.on('fail', function(test, err){
 		test.stack = err.stack;
-		// test.line = test.stack.substr(test.stack.lastIndexOf('/') +1);
 		test.message = err.message;
 	});
 
 	runner.on('end', function() {
-		// append('test');
-		// console.log(process.cwd(),__dirname);
+		that.json = stack;
 		append(JSON.stringify(stack, null, '  '));
 	});
 };

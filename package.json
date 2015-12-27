@@ -1,28 +1,20 @@
 {
-  "dependencies": {
-  },
-  "description": "xyz",
-  "devDependencies": {},
-  "directories": "./lib",
-  "homepage": "",
-  "installable": true,
-  "keywords": [],
-  "license": "MIT",
-  "main": "index.js",
-  "maintainers": [
-    {
-      "name": "",
-      "email": ""
-    }
-  ],
-  "name": "mocha-sonar-xml-cov-reporter",
-  "optionalDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kurtsson/mocha-sonar-xml-cov-reporter.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "0.0.4"
+	"description": "Generate json report file",
+	"homepage": "",
+	"installable": true,
+	"keywords": [],
+	"license": "MIT",
+	"main": "index.js",
+	"maintainers": [
+		{
+			"name": "Elvis de Freitas",
+			"email": "edigitalb@gmail.com"
+		}
+	],
+	"name": "mocha-json-report",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kurtsson/mocha-sonar-xml-cov-reporter.git"
+	},
+	"version": "0.0.1"
 }
